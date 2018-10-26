@@ -2,6 +2,11 @@ app
 .config(function($routeProvider){
 	
 	$routeProvider
+	.when('/login',{
+		templateUrl:'fragments/login.html',
+		controller:'AuthenticationController',
+	    controllerAs:'authController'
+	})
 	.when('/list',{
 		templateUrl:'fragments/list.html',
 		controller:'ListController',

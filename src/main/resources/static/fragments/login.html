@@ -1,0 +1,11 @@
+<div ng-show="!authenticated">
+	<form>
+		<input type="text" placeholder="Username" ng-model="authController.credentials.username"><br/>
+		<input type="text" placeholder="Password" ng-model="authController.credentials.password"><br/>
+		<button ng-click="authController.login()">Login</button>
+	</form>
+</div>
+<div ng-show="authenticated">
+	<h2>Do you really want to logout?</h2>
+	<a href="" ng-click="authController.logout()">Logout</a>
+</div>
